@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<script src="~/Scripts/angular.min.js"></script>
+<script src="~/Scripts/Directive/myDirective.js"></script>
+<script src="~/Scripts/Home/Index/indexApp.js"></script>
+<script src="~/Scripts/Home/Index/indexController.js"></script>
+
+<div ng-app="indexApp" ng-controller="indexController as indexCtrl">
+    <my-directive id="sample" name="indexCtrl.name"></my-directive>
+    @*<my-directive name="indexCtrl.name()"></my-directive>*@
+</div>
